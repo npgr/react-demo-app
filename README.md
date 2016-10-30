@@ -2,7 +2,7 @@
 
 ## Run this App
 
-  After download/clone this repositoty you must install the dependencies running:
+  After download/clone this repository you must install the dependencies running:
 
       npm install
 
@@ -37,7 +37,7 @@
 - Product Filter onChange input without needed of click on search button
 - Customer Filter run on first input letter after this you must click the filter button
 - Sort every column of Products when you click corresponding table title. This sorting are ascending (first click) / descending (second click)
-- ###This App is made with Love and Coffee
+- **This App is made with Love and Coffee..**
 
 ## Next Features (Working on...)
 
@@ -48,4 +48,4 @@
 - Icons for sort action in Product Table
 - Suggestions are Welcomed
 
-### I Hope this contribute your Learning (and my Learning of course). Enjoy This APP ... !!!
+### I Hope this contribute your Learning. Enjoy This APP ... !!!
