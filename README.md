@@ -2,6 +2,8 @@
 
 This Application is a mix of Technical options for learning purposes. Suggestions and Contributions are Welcomed
 
+**I Hope this contribute your Learning (and mine of course). Enjoy This APP ... !!!**
+
 ## Run this App
 
   After download/clone this repository you must install the dependencies running:
@@ -49,5 +51,3 @@ This Application is a mix of Technical options for learning purposes. Suggestion
 - Tests
 - Icons for sort action in Product Table
 - **Contributions and Suggestions are Welcomed...**
-
-### I Hope this contribute your Learning. Enjoy This APP ... !!!
