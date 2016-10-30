@@ -1,5 +1,7 @@
 # react-demo-app
 
+This Application is a mix of Technical options for learning purposes. Suggestions and Contributions are Welcomed
+
 ## Run this App
 
   After download/clone this repository you must install the dependencies running:
