@@ -46,6 +46,6 @@
 - Validate required fields in Product Form
 - Tests
 - Icons for sort action in Product Table
-- ** Contributions and Suggestions are Welcomed...**
+- **Contributions and Suggestions are Welcomed...**
 
 ### I Hope this contribute your Learning. Enjoy This APP ... !!!
