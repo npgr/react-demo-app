@@ -44,9 +44,6 @@ This Application is a mix of Technical options for learning purposes. Suggestion
 
 ## Next Features (Working on...)
 
-- Styled Collapsable Menu
-- Responsive behavior on Product Dialog
-- Validate required fields in Product Form
-- Tests
-- Icons for sort action in Product Table
+- Read Issues (todos)
+
 - **Contributions and Suggestions are Welcomed...**
