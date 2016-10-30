@@ -4,7 +4,7 @@ This Application is a mix of Technical options for learning purposes. Suggestion
 
 **I Hope this contribute your Learning (and mine of course). Enjoy This APP ... !!!**
 
-## Run this App
+## Running App (develop mode)
 
   After download/clone this repository you must install the dependencies running:
 
@@ -21,8 +21,7 @@ This Application is a mix of Technical options for learning purposes. Suggestion
       http://localhost:8080
 
   The server will update with every change on source code and the web page will be reloaded on browser.
-
-  **Nota**: This instructions are for running app in developed mode
+  
 
 ## App Features
 
