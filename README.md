@@ -6,6 +6,8 @@ This Application is a mix of Technical options for learning purposes. Suggestion
 
 ## Running App (develop mode)
 
+  You can view this App on url http://npgr.github.io or get a copy.
+
   After download/clone this repository you must install the dependencies running:
 
       npm install
