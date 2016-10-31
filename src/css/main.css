@@ -143,3 +143,18 @@ h1 {
 	display: flex; 
 	justify-content: center;
 }
+
+hr {
+	border: .3px solid lightGray;
+}
+
+.menuItem {
+	margin: 10px 15px;
+}
+
+.menuItem a {
+	text-decoration: none;
+	margin-left: 5px;
+	color: gray;
+	font-size: 15px;
+}
