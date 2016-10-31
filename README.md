@@ -8,12 +8,12 @@ This Application is a mix of Technical options for learning purposes. Suggestion
 
   You can view this App on url http://npgr.github.io 
   
-  ** Prerequisites for installing locally: **
+  **Prerequisites for installing locally:**
 
       - Nodejs
       - Git Client (Optional)
       
-  ** Install Locally**
+  **Install Locally**
 
   After download/clone this repository you must install the dependencies running:
 
