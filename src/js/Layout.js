@@ -35,7 +35,8 @@ export default class Layout extends React.Component {
 		<Appbar title="Demo App" style={barStyle}
 			onLeftIconButtonTouchTap={openMenu}/>
 		<div style={topLine} />
-			<Menu closeMenu={closeMenu} menuIsOpen={this.state.menuIsOpen}/>
+			<Menu closeMenu={closeMenu} menuIsOpen={this.state.menuIsOpen}
+				history={this.props.history}/>
 			{this.props.children}
 	   </div>
 	  </MuiThemeProvider>

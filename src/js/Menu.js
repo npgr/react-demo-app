@@ -13,6 +13,10 @@ import AboutIcon from 'material-ui/svg-icons/action/perm-device-information';
 @observer
 export default class Menu extends React.Component {
  
+	About() {
+		this.props.closeMenu()
+		this.props.history.pushState(null,"about")
+	}
 	render() {
 	 const { closeMenu } = this.props
 	
@@ -55,9 +59,9 @@ export default class Menu extends React.Component {
 			<Link to='settings' onClick={closeMenu}>Settings</Link>
 		</div>
 		<hr />
-		<div className="menuItem">
+		<div className="menuItem" onClick={this.About.bind(this)}>
 			<AboutIcon style={AboutIStyle}/>
-			<Link to='about' onClick={closeMenu}>About</Link>
+			About
 		</div>
 		<hr />
 	  </Drawer>
