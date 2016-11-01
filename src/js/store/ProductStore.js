@@ -6,8 +6,6 @@ class ProductStore {
 	
 	@observable filter = ""
 	
-	@observable dialog = false
-	
 	order = ''
 	
 	title = 'Product Keeper'
@@ -20,7 +18,8 @@ class ProductStore {
 		}
 		else  /** Only first time in browser **/ 
 		{
-		  this.products = [{ 
+		  this.products = [{
+			key: 1,
 			name: "Product 1",
 			category: "Food",
 			brand: "Brand 1",
@@ -28,14 +27,16 @@ class ProductStore {
 			width: 25,
 			notes: "My notes"
 		  },
-		  { 	name: "Product 2",
+		  { key: 2,	
+			name: "Product 2",
 			category: "Sport",
 			brand: "Brand 2",
 			height: 10,
 			width: 8,
 			notes: "My notes2"
 		  },
-		  {	name: "Product 3",
+		  {	key: 3,
+			name: "Product 3",
 			category: "Health",
 			brand: "Brand 3",
 			height: 55,

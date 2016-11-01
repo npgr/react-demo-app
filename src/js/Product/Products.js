@@ -13,10 +13,17 @@ export default class Products extends React.Component {
 
 	constructor(props) {
 		super(props)
+		this.state = {
+			dialogIsOpen: false
+		}
 	}
 	
-	openNewProduct() {
-		store.dialog = true
+	closeDialog() {
+		this.setState({dialogIsOpen: false})
+	} 
+	
+	openDialog() {
+		this.setState({dialogIsOpen: open})
 	}
 	
 	changeFilter(e) {
@@ -37,7 +44,7 @@ export default class Products extends React.Component {
 	const span = {marginRight: "12px"}
 	return(
 	<div>
-		<NewProduct />
+		<NewProduct closeDialog={this.closeDialog.bind(this)} dialogIsOpen={this.state.dialogIsOpen}/>
 		<div className="responsive">
 		  <div style={block}>
 			<input className="Search" value={store.filter} placeholder="Search"
@@ -49,7 +56,7 @@ export default class Products extends React.Component {
 			</div>
 		  </div>
 		  <FlatButton className="NewButton" style={newBtn} backgroundColor="#f36f27" 
-		    onClick={this.openNewProduct.bind(this)}>
+		    onClick={this.openDialog.bind(this)}>
 				<div style={labelBtn}>
 					<span style={span}>+</span>Product Keeper
 				</div>

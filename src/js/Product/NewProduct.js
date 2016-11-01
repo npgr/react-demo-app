@@ -23,15 +23,11 @@ export default class NewProduct extends React.Component {
 		}
 	}
 	
-	close() {
-		store.dialog = false
-	};
-	
 	save() {
 		store.newProduct(this.state)
 		/** Create new store product **/
-		store.closeDialog()
 		this.setState({name: '', category: '', brand: '', height: 0, width: 0, notes: ''})
+		this.props.closeDialog()
 	}
 	
 	changeName(e) {
@@ -70,7 +66,7 @@ export default class NewProduct extends React.Component {
 	 const title = [
 		<div style={ iTitleStyle }>
 			<h3 style={title1}>Product Keeper</h3>
-			<div style={title3} onClick={this.close.bind(this)}>
+			<div style={title3} onClick={this.props.closeDialog}>
 				<CloseIcon style={icon} />
 			</div>
 		</div>
@@ -89,8 +85,8 @@ export default class NewProduct extends React.Component {
           title={title}
           actions={actions}
           modal={true}
-          open={store.dialog}
-          onRequestClose={this.close}
+		  open={this.props.dialogIsOpen}
+          onRequestClose={this.props.closeDialog}
           autoScrollBodyContent={true}
 		  autoDetectWindowHeight = {false}
 		  style={ dialogStyle }
