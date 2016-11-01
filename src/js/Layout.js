@@ -6,25 +6,32 @@ import Appbar from 'material-ui/Appbar';
 
 import Menu from './Menu';
 
-import AppState from './store/AppState'
-
 export default class Layout extends React.Component {
 	
-	handleOpen = () => AppState.openMenu()
+	constructor(props) {
+		super(props)
+		this.state = {
+			menuIsOpen: false
+		}
+	}
+	
+	openMenu = () => this.setState({menuIsOpen: true})
+
+	closeMenu = () => this.setState({menuIsOpen: false})
 	
 	render() {
 	 const topLine = { height: "7px", backgroundColor: "#34829c"}
-	 var img = { maxWidth: "100%", height: "auto" }
-	 var line = { display:"flex", backgroundColor:"#9ccc66", height:"5px" }
-	 var barStyle = {backgroundColor: '#3a80ab', fontSize: '16px', fontWeight: '200'}
+	 let img = { maxWidth: "100%", height: "auto" }
+	 let line = { display:"flex", backgroundColor:"#9ccc66", height:"5px" }
+	 let barStyle = {backgroundColor: '#3a80ab', fontSize: '16px', fontWeight: '200'}
 	 	 
 	 return(
 	  <MuiThemeProvider>
 	   <div>
 		<Appbar title="Demo App" style={barStyle}
-			onLeftIconButtonTouchTap={this.handleOpen.bind(this)}/>
+			onLeftIconButtonTouchTap={this.openMenu.bind(this)}/>
 		<div style={topLine} />
-			<Menu />
+			<Menu closeMenu={this.closeMenu.bind(this)} menuIsOpen={this.state.menuIsOpen}/>
 			{this.props.children}
 	   </div>
 	  </MuiThemeProvider>
