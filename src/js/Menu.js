@@ -14,6 +14,8 @@ import AboutIcon from 'material-ui/svg-icons/action/perm-device-information';
 export default class Menu extends React.Component {
  
 	render() {
+	 const { closeMenu } = this.props
+	
 	 var barStyle = {backgroundColor: '#3a80ab', fontSize: '16px', fontWeight: '200'}
 	 var ShopIStyle = { color: '68c122'}
 	 var SavedIStyle = { color: 'blue'} //283593
@@ -30,32 +32,32 @@ export default class Menu extends React.Component {
 		<h2 style={menuStyle}>Menu</h2>
 		<div className="menuItem">
 			<ShopIcon style={ShopIStyle}/>
-			<Link to='order' onClick={this.props.closeMenu}>New Order</Link>
+			<Link to='order' onClick={closeMenu}>New Order</Link>
 		</div>
 		<hr />
 		<div className="menuItem">
 			<SavedIcon style={SavedIStyle}/>
-			<Link to='saved_orders' onClick={this.props.closeMenu}>Saved Orders</Link>
+			<Link to='saved_orders' onClick={closeMenu}>Saved Orders</Link>
 		</div>
 		<hr />
 		<div className="menuItem">
 			<ProdIcon style={ProdIStyle}/>
-			<Link to='/' onClick={this.props.closeMenu}>Products</Link>
+			<Link to='/' onClick={closeMenu}>Products</Link>
 		</div>
 		<hr />
 		<div className="menuItem">
 				<CustIcon style={CustIStyle}/>
-			<Link to='customers' onClick={this.props.closeMenu}>Customers</Link>
+			<Link to='customers' onClick={closeMenu}>Customers</Link>
 		</div>
 		<hr />
 		<div className="menuItem">
 			<SetIcon style={SetIStyle}/>
-			<Link to='settings' onClick={this.props.closeMenu}>Settings</Link>
+			<Link to='settings' onClick={closeMenu}>Settings</Link>
 		</div>
 		<hr />
 		<div className="menuItem">
 			<AboutIcon style={AboutIStyle}/>
-			<Link to='about' onClick={this.props.closeMenu}>About</Link>
+			<Link to='about' onClick={closeMenu}>About</Link>
 		</div>
 		<hr />
 	  </Drawer>

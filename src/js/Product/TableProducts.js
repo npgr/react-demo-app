@@ -4,9 +4,15 @@ import { observer } from "mobx-react"
 @observer
 export default class TableProducts extends React.Component {
 
-	/*constructor(props) {
+	constructor(props) {
 		super(props)
-	}*/
+		this.orderByName = this.orderByName.bind(this)
+		this.orderByCategory = this.orderByCategory.bind(this)
+		this.orderByBrand = this.orderByBrand.bind(this)
+		this.orderByWidth = this.orderByWidth.bind(this)
+		this.orderByHeight = this.orderByHeight.bind(this)
+		this.orderByNotes = this.orderByNotes.bind(this)
+	}
 
 	orderByName() {
 		this.props.store.orderByName()
@@ -48,6 +54,9 @@ export default class TableProducts extends React.Component {
 	}
 	 
   render() {
+	  
+	const { orderByName, orderByCategory, orderByBrand, orderByWidth, 
+		orderByHeight, orderByNotes} = this
 	
 	var tableLines = this.tableLines()
 	return(
@@ -55,12 +64,12 @@ export default class TableProducts extends React.Component {
 	  <table>
 		<thead>
 		  <tr>
-			<th onClick={this.orderByName.bind(this)}>Product Name</th>
-			<th onClick={this.orderByCategory.bind(this)}>Category</th>
-			<th onClick={this.orderByBrand.bind(this)}>Brand</th>
-			<th onClick={this.orderByHeight.bind(this)}>Height</th>
-			<th onClick={this.orderByWidth.bind(this)}>Width</th>
-			<th onClick={this.orderByNotes.bind(this)}>Notes</th>
+			<th onClick={orderByName}>Product Name</th>
+			<th onClick={orderByCategory}>Category</th>
+			<th onClick={orderByBrand}>Brand</th>
+			<th onClick={orderByHeight}>Height</th>
+			<th onClick={orderByWidth}>Width</th>
+			<th onClick={orderByNotes}>Notes</th>
 		  </tr>
 		</thead>
 		<tbody>

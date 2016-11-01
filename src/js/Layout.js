@@ -13,6 +13,8 @@ export default class Layout extends React.Component {
 		this.state = {
 			menuIsOpen: false
 		}
+		this.closeMenu = this.closeMenu.bind(this)
+		this.openMenu = this.openMenu.bind(this)
 	}
 	
 	openMenu = () => this.setState({menuIsOpen: true})
@@ -20,6 +22,8 @@ export default class Layout extends React.Component {
 	closeMenu = () => this.setState({menuIsOpen: false})
 	
 	render() {
+	 const { closeMenu, openMenu } = this
+	 
 	 const topLine = { height: "7px", backgroundColor: "#34829c"}
 	 let img = { maxWidth: "100%", height: "auto" }
 	 let line = { display:"flex", backgroundColor:"#9ccc66", height:"5px" }
@@ -29,9 +33,9 @@ export default class Layout extends React.Component {
 	  <MuiThemeProvider>
 	   <div>
 		<Appbar title="Demo App" style={barStyle}
-			onLeftIconButtonTouchTap={this.openMenu.bind(this)}/>
+			onLeftIconButtonTouchTap={openMenu}/>
 		<div style={topLine} />
-			<Menu closeMenu={this.closeMenu.bind(this)} menuIsOpen={this.state.menuIsOpen}/>
+			<Menu closeMenu={closeMenu} menuIsOpen={this.state.menuIsOpen}/>
 			{this.props.children}
 	   </div>
 	  </MuiThemeProvider>
