@@ -4,19 +4,28 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-	"webpack": "webpack",
+    "webpack": "webpack",
     "webpackw": "webpack --watch",
     "start": "webpack-dev-server --content-base src --inline --hot"
   },
-  "keywords": ["React", "MobX", "ES6", "Webpack", "Babel", "Material-UI"],
+  "keywords": [
+    "React",
+    "MobX",
+    "ES6",
+    "Webpack",
+    "Babel",
+    "Material-UI"
+  ],
   "author": "Nuno Goncalves",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.14.0",
+    "bootstrap": "^3.3.7",
     "material-ui": "^0.15.4",
     "mobx": "^2.3.7",
     "mobx-react": "^3.5.1",
     "react": "^15.2.1",
+    "react-bootstrap": "^0.30.6",
     "react-dom": "^15.3.0",
     "react-router": "^2.8.1",
     "react-tap-event-plugin": "^1.0.0"
