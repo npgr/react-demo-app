@@ -149,12 +149,7 @@ hr {
 }
 
 .menuItem {
-	margin: 10px 15px;
-}
-
-.menuItem a {
-	text-decoration: none;
-	margin-left: 5px;
+	margin: 15px;
 	color: gray;
 	font-size: 15px;
 }
