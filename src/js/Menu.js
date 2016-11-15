@@ -38,7 +38,7 @@ export default class Menu extends React.Component {
 	 
 	 return(
 	  <Drawer open={this.props.menuIsOpen} width={200}>
-		<img src="../images/menuimg2.jpg" style={imgStyle}/>
+		<img src="../assets/images/menuimg2.jpg" style={imgStyle}/>
 		<h2 style={menuStyle}>Menu</h2>
 		<div className="menuItem" onClick={goPage} id="order">
 			<ShopIcon style={ShopIStyle}/>

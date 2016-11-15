@@ -1,4 +1,4 @@
-import "../css/main.css"
+import "../assets/css/main.css"
 import React from "react"
 import ReactDOM from "react-dom"
 import injectTapEventPlugin from 'react-tap-event-plugin';

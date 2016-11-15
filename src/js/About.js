@@ -14,7 +14,7 @@ export default class About extends React.Component {
 	return (
 		<div>
 			<div style={center}>
-				<img src="../images/highwindow2.jpg" style={img}/>
+				<img src="../assets/images/highwindow2.jpg" style={img}/>
 			</div>
 			<h2 style={center}>Demo App</h2>
 			<div style={center}>Versión  0.1.0</div>
