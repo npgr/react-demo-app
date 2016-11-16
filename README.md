@@ -6,7 +6,7 @@ This Application is a mix of Technical options for learning purposes. Suggestion
 
 ## Running App (develop mode)
 
-  You can view this App on url http://npgr.github.io/react-demo-app/app
+  You can view this App on url http://npgr.github.io/react-demo-app
   
   **Prerequisites for installing locally:**
 
